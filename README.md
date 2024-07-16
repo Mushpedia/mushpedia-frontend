@@ -10,6 +10,8 @@ Welcome to Mushpedia, a mushroom encyclopedia website built with Next.js. It all
 Check out the website [here](https://mushpedia.vercel.app/).
 
 ## Screenshots
+![Mushpedia Encylopedia Demo](demo/encyclopedia.gif)
+![Mushpedia Game Demo](demo/game.gif)
 
 ## Technologies Used
 * Next.js
