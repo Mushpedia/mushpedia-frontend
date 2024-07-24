@@ -66,7 +66,7 @@ export default function GamePage() {
 
     return (
         <div
-            className="bg-black h-[100vh] flex flex-col items-center text-center"
+            className="bg-black h-[100vh] flex flex-col items-center text-center overflow-hidden"
         >
             <GameInfo runGame={runGame} found={found} startGame={startGame} />
             <div ref={scene} className='w-screen' />

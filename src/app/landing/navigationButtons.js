@@ -26,7 +26,7 @@ export default function NavigationButtons() {
     );
 
     return (
-        <div className="flex flex-row justify-between w-[98vw] pt-1 pl-6">
+        <div className="flex flex-row justify-between w-[98vw] pt-1 pl-2 lg:pl-6">
             {button({ text: "Go to Game", url: '/game', side: "left" })}
             {button({ text: "Encyclopedia", url: '#encyclopedia', side: "right" })}
         </div>
