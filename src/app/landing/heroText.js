@@ -11,13 +11,13 @@ export default function HeroText() {
         {
             key: 'logo',
             content: (width >= 640) &&
-                <Image src='/logo/mushroom_orange.png' alt="logo" width={50} height={50} priority />
+                <Image src='/logo/mushroom_orange.png' alt="logo" width={60} height={60} priority />
             , delay: 0.4
         },
         {
             key: 'text1',
             content: (
-                <p className={`font-PT_Serif font-normal text-custom_orange ${(width < 640) ? " text-5xl" : "text-7xl"} `} >
+                <p className={`font-PT_Serif font-normal text-custom_orange text-6xl lg:text-8xl`} >
                     <span className="block sm:inline">The </span>
                     <span className="block sm:inline">encyclopedia of</span>
                 </p>
@@ -26,7 +26,7 @@ export default function HeroText() {
         {
             key: 'text2',
             content: (
-                <h1 className={`font-Shrikhand text-custom_orange ${(width < 640) && "text-8xl"} md:text-[12vw] lg:text-[13vw] leading-none whitespace-normal`} >
+                <h1 className={`font-Shrikhand text-custom_orange text-8xl lg:text-[13vw] leading-none whitespace-normal`} >
                     <span className="block sm:inline">MUSH</span>
                     <span className="block sm:inline">ROOMS</span>
                 </h1>
@@ -34,12 +34,12 @@ export default function HeroText() {
         },
         {
             key: 'text3',
-            content: <p className={`font-PT_Serif text-custom_orange ${(width < 640) ? " text-5xl" : "text-7xl"} `} >caro deorum</p>, delay: 0.5
+            content: <p className={`font-PT_Serif text-custom_orange text-6xl lg:text-8xl`} >caro deorum</p>, delay: 0.5
         },
     ];
 
     return (
-        <section className={`flex flex-col justify-center items-center text-center w-[100%] h-[80%] gap-8 sm:gap-2`}>
+        <section className={`flex flex-col justify-center items-center text-center w-[100%] h-[80%] gap-2 lg:gap-8`}>
             {elements.map((element, index) => (
                 <motion.div
                     key={element.key}
