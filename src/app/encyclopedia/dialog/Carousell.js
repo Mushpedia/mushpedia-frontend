@@ -73,7 +73,7 @@ const Carousel = ({ images }) => {
     };
 
     return (
-        <div className="carousel">
+        <div className="carousel px-4 py-2">
             <div className="relative rounded-lg h-[400px] w-max-[600px] overflow-hidden">
                 <AnimatePresence>
                     <motion.img
@@ -136,4 +136,5 @@ const Carousel = ({ images }) => {
         </div>
     );
 };
+
 export default Carousel;

@@ -30,7 +30,7 @@ export default function CardsContainer({ query }) {
 
     return (
         <div
-            className="flex-grow w-[99vw] p-8 pt-4 mb-8 grid sm:grid-cols-1 gap-2 md:grid-cols-3 md:gap-4 lg:grid-cols-5 lg:gap-6 overflow-auto scrollbar scrollbar-thumb-custom_orange"
+            className="flex-grow w-[99vw] p-8 pt-4 mb-8 grid grid-cols-1 gap-2 md:grid-cols-3 md:gap-4 lg:grid-cols-5 lg:gap-6 overflow-auto scrollbar scrollbar-thumb-custom_orange"
         >
             {flatData.map((mushroom, index) => (
                 <li className=''
