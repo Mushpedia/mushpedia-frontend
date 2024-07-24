@@ -26,7 +26,7 @@ export default function CardsContainer({ query }) {
 
     if (query.isPending) return 'Loading...'
 
-    if (query.error) return 'An error has occurred: ' + error.message
+    if (query.error) return 'An error has occurred: ' + query.error?.message;
 
     return (
         <div
