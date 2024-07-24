@@ -59,14 +59,13 @@ export default function DialogBody({ toggleDialog, data }) {
     }
 
     const description = ({ header, text }) => (
-        <div className="flex justify-end">
-            <p className="text-custom_orange text-[18px] m-0 mt-2">{header}</p>
-            <p className="text-[17px] w-[700px] mt-2.5 ml-7 mb-2">{text}</p>
+        <div className="sm:flex justify-end">
+            <p className="text-custom_orange text-[18px] m-0 mt-2 sm:mt-3">{header}</p>
+            <p className="text-[17px] mt-1 sm:mt-2.5 sm:w-[700px] ml-7 mb-2">{text}</p>
         </div>
     );
 
     return (
-
         <div className="h-[90vh] w-[85vw] bg-black text-white font-PT_Serif overflow-auto scrollbar scrollbar-thumb-custom_orange">
             <motion.button
                 className='pl-4 pt-2 pb-0 text-xl'

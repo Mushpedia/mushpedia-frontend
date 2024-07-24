@@ -25,7 +25,7 @@ export default function Card({ data }) {
     return (
         <div ref={body}>
             <motion.div
-                className='flex flex-col items-center justify-center w-full md:w-[25vw] lg:w-[15vw] p-4 sm:p-4 md:p-2 border-2 border-custom_orange rounded-md'
+                className='flex flex-col items-center justify-center w-full md:w-[25vw] lg:w-[15vw] p-4 md:p-2 border-2 border-custom_orange rounded-md'
                 custom={data._id}
                 variants={animation}
                 initial="initial"
@@ -60,6 +60,5 @@ export default function Card({ data }) {
                 <DialogBody toggleDialog={toggleDialog} data={data} />
             </dialog>
         </div>
-
     )
 }
