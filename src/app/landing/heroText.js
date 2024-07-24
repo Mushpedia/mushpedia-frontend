@@ -39,7 +39,7 @@ export default function HeroText() {
     ];
 
     return (
-        <section className={`flex flex-col items-center text-center ${(width < 640) ? "gap-2 mt-10" : "gap-8 mt-10"} `}>
+        <section className={`flex flex-col justify-center items-center text-center w-[100%] h-[80%] gap-8 sm:gap-2`}>
             {elements.map((element, index) => (
                 <motion.div
                     key={element.key}
